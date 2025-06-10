@@ -9,3 +9,5 @@ Bruk filstruktren på discord fra forum "ZestyWebsite"
 
 
 rfc lager function reacr
+
+id på css har småbokstaver
