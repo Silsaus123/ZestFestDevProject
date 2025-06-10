@@ -1,0 +1,11 @@
+Filnavn med camelCase
+Functionel med PascalCase
+
+var navn er camelCase
+
+BRUK JSX IKKE JS >:c
+
+Bruk filstruktren på discord fra forum "ZestyWebsite"
+
+
+rfc lager function reacr
