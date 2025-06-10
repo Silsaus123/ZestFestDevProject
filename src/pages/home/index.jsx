@@ -5,9 +5,15 @@ import "./index.css"
 export default function Index() {
   return (
     <div id="background">
-      <div id="header">
+      <header id="header">
         <h1>Zesty Games</h1>
-      </div>
+      </header>
+      <main>
+
+      </main>
+      <footer>
+        
+      </footer>
     </div>
   )
 }

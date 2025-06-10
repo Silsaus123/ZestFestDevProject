@@ -1,3 +1,22 @@
 #background {
-  background-image: url('../../../../pic/Ark.png');
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/pic/Ark.png'); /* or your imported path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  position: relative;
+  bottom: 45%;
+  background-color: rgb(226, 231, 135);
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
