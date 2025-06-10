@@ -1,3 +1,7 @@
 #background {
   background-image: url('../../../../pic/Ark.png');
 }
+
+.games {
+  display: flex;
+}
