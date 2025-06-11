@@ -15,3 +15,5 @@ rfc lager function reacr
 id på css har småbokstaver
 
 Flutter
+
+for nå 4 spill på 1 linje på main

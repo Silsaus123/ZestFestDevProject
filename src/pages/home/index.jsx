@@ -1,6 +1,6 @@
 
 import "./index.css"
-import LisaPlaceholder from "./../../pic/lisaPlaceholder.png"
+import LisaPlaceholder from '..\\..\\..\\public\\pic\\lisaPlaceholder.png'
 import GameCard from '../../random/gameCard'
 
 export default function Index() {
