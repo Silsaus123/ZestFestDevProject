@@ -9,10 +9,12 @@ export default function Index() {
         <h1>Zesty Games</h1>
       </header>
       <main>
-
+        <div id="tooltab">
+          ikke weed
+        </div>
       </main>
       <footer>
-        
+
       </footer>
     </div>
   )
