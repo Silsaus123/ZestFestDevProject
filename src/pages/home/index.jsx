@@ -2,6 +2,7 @@
 import "./index.css"
 import LisaPlaceholder from '..\\..\\..\\public\\pic\\lisaPlaceholder.png'
 import GameCard from '../../random/gameCard'
+import Popup from "./popup/popup"
 
 export default function Index() {
   return (
@@ -17,6 +18,7 @@ export default function Index() {
             title={"Lisa Clicker"}
             link={"/lisa"}
             />
+            <Popup/>
           </div>
         </div>
         <div id="tooltab">
