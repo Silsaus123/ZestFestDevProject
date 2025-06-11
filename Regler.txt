@@ -1,7 +1,9 @@
 Filnavn med camelCase
-Functionel med PascalCase
+Function navn med PascalCase
+Folder navn små bokstaver
+Var navn er camelCase
 
-var navn er camelCase
+TRENGER IKKE IMPORT REACT
 
 BRUK JSX IKKE JS >:c
 
@@ -11,5 +13,3 @@ Bruk filstruktren på discord fra forum "ZestyWebsite"
 rfc lager function reacr
 
 id på css har småbokstaver
-
-Flutter
