@@ -17,6 +17,9 @@ export default function Popup() {
   const [visible2, setVisible2] = useState(false)
   const [visible3, setVisible3] = useState(true)
 
+  const [showPopup, setShowPopup] = useState(1)
+  const generatorRef = useRef(null)
+
   const handleMove = () => {
     counterRef.current += 1
     counterRef.current < 3 ? setPositionRight(prev => prev + 50) : setMoveLeft(false)
@@ -47,10 +50,25 @@ export default function Popup() {
     startInterval() // restart interval with new speed
     console.log(speedRef.current)
   }
+  
+  useEffect(() => {
+    if (showPopup < 0.05) return //adjust spawn chance
+  
+    generatorRef.current = setInterval(() => {
+      const rand = Math.random()
+      console.log(rand)
+      if (rand < 0.05) {
+        setShowPopup(rand)
+        clearInterval(generatorRef.current)
+    }
+  }, 1000)
+
+  return () => clearInterval(generatorRef.current)
+  }, [showPopup])
 
   return (
     <div className="popup" style={{
-      display: visible3 ? "block" : "none"
+      display: visible3 && showPopup < 0.05 ? "block" : "none"
     }}>
       <div className="nextXdiv" style={{
         display: visible2 ? "block" : "none"
