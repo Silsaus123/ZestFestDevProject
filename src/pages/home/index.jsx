@@ -1,5 +1,6 @@
 
 import "./index.css"
+import { useEffect, useState, useRef} from "react"
 import LisaPlaceholder from '..\\..\\..\\public\\pic\\lisaPlaceholder.png'
 import GameCard from '../../random/gameCard'
 import Popup from "./popup/popup"
