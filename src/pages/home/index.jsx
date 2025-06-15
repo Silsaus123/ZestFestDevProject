@@ -19,9 +19,10 @@ export default function Index() {
             title={"Lisa Clicker"}
             link={"/lisa"}
             />
-            <Popup/>
+            
           </div>
         </div>
+        <Popup/>
         <div id="tooltab">
           ikke weed
         </div>

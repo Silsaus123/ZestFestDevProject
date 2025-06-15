@@ -1,7 +1,7 @@
 .popup {
     border: 2px solid #000000;
     background-color: #ff00f2;
-    width: 100%;
+    width: 330px;
     text-align: center;
     margin: 10px;
     padding-left: 10px;
@@ -9,6 +9,16 @@
     padding-top: 5px;
     padding-bottom: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    /* forward positioning */
+}
+
+.popup.visible{
+    animation: fadeIn 0.5s ease-in-out;
+    opacity: 1;
 }
 
 .popup img {
@@ -72,4 +82,13 @@
       0 0 92px rgb(255, 120, 120),
       0 0 102px rgb(255, 128, 128),
       0 0 151px rgb(255, 187, 187);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

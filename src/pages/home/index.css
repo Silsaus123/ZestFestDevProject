@@ -53,8 +53,6 @@ header{
   top: 575px;
 }
 
-
-
 #tooltab:hover {
   animation-name: tooltabshow;
   animation-duration: 1s;

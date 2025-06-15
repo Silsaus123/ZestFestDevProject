@@ -2,6 +2,7 @@ import "./popup.css"
 import { useEffect, useState, useRef} from "react"
 
 export default function Popup() {
+  const spawnRate = 0.9 //adjust popup spawnrate
   //genererer fra 0-1
   //multipliserer med 523 - 231 + 1 = 292
   //min value 0 * 292 = 0 + 231 = 231 
@@ -52,12 +53,12 @@ export default function Popup() {
   }
   
   useEffect(() => {
-    if (showPopup < 0.05) return //adjust spawn chance
+    if (showPopup < spawnRate) return //adjust spawn chance
   
     generatorRef.current = setInterval(() => {
       const rand = Math.random()
       console.log(rand)
-      if (rand < 0.05) {
+      if (rand < spawnRate) {
         setShowPopup(rand)
         clearInterval(generatorRef.current)
     }
@@ -67,20 +68,27 @@ export default function Popup() {
   }, [showPopup])
 
   return (
-    <div className="popup" style={{
-      display: visible3 && showPopup < 0.05 ? "block" : "none"
-    }}>
-      <div className="nextXdiv" style={{
+    <div //flere classnames MED CONDITIONS... ZAMN!1!!1! high tech
+      className={`popup ${visible3 && showPopup < spawnRate ? "visible" : ""}`} 
+      style={{
+        display: visible3 && showPopup < spawnRate ? "block" : "none"
+      }}
+    >
+      <div 
+      className="nextXdiv" 
+      style={{
         display: visible2 ? "block" : "none"
       }}>
         <button className="nextX" id="xbtn" onClick={handleMove}>X</button>
       </div>
         <div id="hot">
-            <div className="xcontainer" style={{
+            <div 
+            className="xcontainer" 
+            style={{
               paddingRight: `${positionRight}px`, 
               justifyContent: moveLeft ? "flexEnd" : "flex-start", 
               display: visible ? "default" : "none"  
-              }}>
+            }}>
                 <button id="xbtn" onClick={handleMove}>x</button>
             </div>
             <p>Hot SINGLE men in your area</p>
