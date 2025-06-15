@@ -1,0 +1,17 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vw;
+    border-right: 2px solid black;
+    z-index: 100;
+    background-image: url("/../../../public/pic/navBackground.jpeg");
+    background-position: center;
+}
+
+li {
+    padding-top: 5%;
+    padding-left: 7%;
+    list-style-type: none;
+}

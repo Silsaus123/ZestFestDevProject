@@ -4,6 +4,7 @@ import { useEffect, useState, useRef} from "react"
 import LisaPlaceholder from '..\\..\\..\\public\\pic\\lisaPlaceholder.png'
 import GameCard from '../../random/gameCard'
 import Popup from "./popup/popup"
+import Navbar from "./navbar/navbar"
 
 export default function Index() {
   return (
@@ -12,14 +13,14 @@ export default function Index() {
         <h1>Zesty Games</h1>
       </header>
       <main>
-         <div className='games'>
+        {/* <Navbar /> navbar not finished SANDRA HELPPPP*/} 
+        <div className='games'>
           <div className='lisa'>
             <GameCard 
             image={LisaPlaceholder}
             title={"Lisa Clicker"}
             link={"/lisa"}
             />
-            
           </div>
         </div>
         <Popup/>
