@@ -1,11 +1,10 @@
-import lisaPlaceholder from "./../../pic/lisaPlaceholder.png"
 import HomeBtn from "../../random/homeBtn"
 
 function LisaClicker() {
     return (
         <div>
             <HomeBtn />
-            <img src={lisaPlaceholder} alt='Lisa Placeholder' />
+            <p>fuck</p>
         </div>
     )
 }
