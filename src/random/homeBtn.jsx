@@ -9,7 +9,7 @@ function HomeBtn() {
 
     return (
         <div>
-            <button onClick={handleClick}>
+            <button onClick={handleClick} id='homebtn'>
                 Home
             </button>
         </div>
