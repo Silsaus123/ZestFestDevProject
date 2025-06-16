@@ -12,7 +12,7 @@ export default function Index() {
 
       <div className='games'>
         <div className='lisa'>
-          <GameCard 
+          <GameCard
           image={LisaPlaceholder}
           title={"Lisa Clicker"}
           link={"/lisa"}
