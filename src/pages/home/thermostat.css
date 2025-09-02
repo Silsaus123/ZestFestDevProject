@@ -1,0 +1,193 @@
+#container{
+  display: flex; /* Make it a flex container */
+  align-items: right; /* Center vertically if needed */
+  justify-content: right; /* Center horizontally */
+  background-color: aquamarine;
+  position: fixed;
+  height: 30%;
+  width: 15%;
+  right: 10%; /* move container to match thermostat's right alignment */
+  top: 20%;    /* adjust vertical placement */
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.temp-mark10 {
+  position: relative;
+}
+
+.temp-mark5 {
+  position: relative;
+}
+
+#thermo-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* or whatever your container bg is */
+  z-index: 2; /* ensure it’s above the gradient but below markings */
+  transition: height 0.5s ease; /* smooth animation */
+  border-radius: 10px 10px 0 0;
+
+}
+.temp-mark10::before {
+  content: "";
+  position: absolute;
+  left: -87%;            /* adjust to position the black line */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 65%;            /* length of the black line */
+  height: 12%;           /* thickness of the black line */
+  background-color: black;
+  z-index: 10;
+}
+
+.temp-mark5::before {
+  content: "";
+  position: absolute;
+  left: -6px;            /* adjust to position the black line */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;            /* length of the black line */
+  height: 2px;           /* thickness of the black line */
+  background-color: rgb(0, 0, 0);
+  z-index: 10;
+}
+
+
+#glass{
+  position: fixed;
+  outline: 3px solid  black;
+  border-radius: 25px;
+  right: 50px;
+  height: 35%;
+  width: 2%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+
+#thermostat {
+  position: fixed;
+  outline: 3px solid  black;
+  border-radius: 25px;
+  right: 50px;
+  height: 35%;
+  width: 2%;
+  background-image: linear-gradient(red, rgb(194, 138, 35), rgb(90, 90, 176));
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+
+
+.temp-mark10 p {
+  position: relative;
+  left: 85%;
+  margin: 0;
+  font-size: 14px;
+  color: black;
+}
+
+.temp-mark5 p {
+  position: relative;
+  left: 85%;
+  margin: 0;
+  font-size: 15px;
+  color: black;
+}
+
+#temp0   { top: 89%; left: 150%; }
+#temp5   { top: 89%; left: 80%; }
+#temp10  { top: 72%; left: 150%; }
+#temp15  { top: 79%; left: 80%; }
+#temp20  { top: 54%; left: 150%; }
+#temp25  { top: 70%; left: 80%; }
+#temp30  { top: 38%; left: 150%; }
+#temp35  { top: 63%; left: 80%; }
+#temp40  { top: 22%; left: 150%; }
+#temp45  { top:54%; left: 80%; }
+#temp50  { top:5%; left: 150%; }
+#temp55  { top:46%; left:80%; }
+#temp60  { top:-11%; left:150%; }
+#temp65  { top: 38%; left: 80%; }
+#temp70  { top: -28%; left: 150%; }
+#temp75  { top: 29%; left: 80%; }
+#temp80  { top: -45%; left: 150%; }
+#temp85  { top: 20%; left:80%; }
+#temp90  { top: -62%; left: 150%; }
+#temp95  { top: 11%; }
+#temp100 { top: -78%; left: 150%; }
+
+
+/* #tempnum0, #tempnum70, #tempnum100{
+  position: fixed;
+  rotate: -90deg;
+  bottom: 50%;
+  right: 30%;
+}
+#degline0, #degline1, #degline2 {
+ position: fixed;
+  height: 4%;
+  width: 1px;
+}
+
+#degline0{
+  rotate: 90deg;
+  background-color: rgb(0, 0, 0);
+  bottom: 20%;
+}
+
+#degline1{
+  rotate: 90deg;
+  background-color: rgb(0, 0, 0);
+  bottom:25%
+}
+
+#degline2{
+  rotate: 90deg;
+  background-color: rgb(0, 0, 0);
+  bottom:33%
+}
+
+#deg0, #deg1, #deg2{
+  position: fixed;
+  height: 6%;
+  width: 2px;
+  bottom: 11%;
+  rotate: 90deg;
+}
+
+#deg0{
+  bottom:15%;
+   background-color: rgb(84, 88, 209);
+}
+
+#deg1{
+  bottom: 28%;
+   background-color: rgb(132, 102, 58);
+}
+
+#deg2{
+  bottom: 36%;
+   background-color: rgb(164, 74, 74);
+  
+} */
+
+
+/* #thermostdeg{
+  position: fixed;
+  background-color: black;
+  height: 25%;
+  width: 2px;
+  bottom: 16%;
+} */
+
+
