@@ -14,18 +14,18 @@ main{
   padding-top: 2%;
 
   }
-
+ 
 #background {
   width: 100vw;
   height: 100vh;
   background-image: url('/pic/Ark.png'); /* or your imported path */
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
 
 header{
@@ -52,8 +52,6 @@ header{
   transition: top 0.3 ease-in-out;
   top: 575px;
 }
-
-
 
 #tooltab:hover {
   animation-name: tooltabshow;
