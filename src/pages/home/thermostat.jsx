@@ -14,7 +14,7 @@ export default function Thermostat({ heat, heightPercent}) {
           <div
             id="thermo-cover"
             style={{ height: `${heightPercent}%`,
-            borderRadius: heightPercent === 100 ? "10px" :"3px",
+            borderRadius: heightPercent === 100 ? "10px" :"10px 10px 3px 3px",
           }}
           ></div>
           <div id="thermoline" />

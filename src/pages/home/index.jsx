@@ -5,7 +5,9 @@ import { useEffect, useState, useRef} from "react"
 import LisaPlaceholder from '..\\..\\..\\public\\pic\\lisaPlaceholder.png'
 import GameCard from '../../random/gameCard'
 import Thermostat from "./thermostat.jsx"
-import { useEffect, useState, useRef } from "react";
+import trollman2 from '..\\..\\..\\public\\pic\\trollman2.png'
+import dayProDict from "../dayprodict/dayProDict.jsx"
+import Spørsmål from "../dayprodict/spørsmål.jsx"
 
 export default function Index() {
 
@@ -23,11 +25,6 @@ export default function Index() {
     }
 
 
-
-   
-
-   
-
   return (
     <div id="background">
       <header id="header">
@@ -42,6 +39,10 @@ export default function Index() {
             title={"Lisa Clicker"}
             link={"/lisa"}
             />
+            <GameCard
+            image={trollman2}
+            title={"DayProDih"}
+            link={"/dayprodih"}/>
             <button onClick={handleTempUp}>Lisa omg plzzzzzzzzzzzzzzzzzzzzzzzzz</button>
             <p>{heat}lisa thick thick juicy sass uten s på begynelsen </p> 
             <button onClick={handleTempDown}>tempen går NEDDDD</button>
